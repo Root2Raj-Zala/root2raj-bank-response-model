@@ -1,0 +1,177 @@
+{
+  "source_rows": 41188,
+  "source_sha256": "74adfc578bf77a7ff4bb1ba4a9f8709d9e3c6907342959c2c8416847e0afb4d8",
+  "source_url": "https://archive.ics.uci.edu/static/public/222/bank%2Bmarketing.zip",
+  "selected_model": "logistic",
+  "features": [
+    "contact",
+    "month",
+    "day_of_week",
+    "poutcome",
+    "campaign",
+    "pdays",
+    "previous"
+  ],
+  "excluded_features": [
+    "duration",
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "housing",
+    "loan",
+    "emp.var.rate",
+    "cons.price.idx",
+    "cons.conf.idx",
+    "euribor3m",
+    "nr.employed"
+  ],
+  "split_0_based_end_exclusive": {
+    "train": {
+      "start": 0,
+      "end": 24712,
+      "records": 24712,
+      "positive_rate": 0.04807381029459372
+    },
+    "selection": {
+      "start": 24712,
+      "end": 28831,
+      "records": 4119,
+      "positive_rate": 0.10148094197620781
+    },
+    "calibration": {
+      "start": 28831,
+      "end": 32950,
+      "records": 4119,
+      "positive_rate": 0.11993202233551833
+    },
+    "test": {
+      "start": 32950,
+      "end": 41188,
+      "records": 8238,
+      "positive_rate": 0.3083272638990046
+    }
+  },
+  "selection_scores": {
+    "logistic": {
+      "average_precision": 0.20593991595634503,
+      "roc_auc": 0.6883546280650905,
+      "brier": 0.0895461576270362,
+      "log_loss": 0.31943534814471247,
+      "prevalence": 0.10148094197620781,
+      "top_10pct_precision": 0.28640776699029125,
+      "top_10pct_lift": 2.822281321131602,
+      "top_10pct_capture": 0.2822966507177033,
+      "top_10pct_records": 412
+    },
+    "random_forest": {
+      "average_precision": 0.08571070478846554,
+      "roc_auc": 0.43097365382949654,
+      "brier": 0.09350138990544875,
+      "log_loss": 0.3454955007691098,
+      "prevalence": 0.10148094197620781,
+      "top_10pct_precision": 0.05339805825242718,
+      "top_10pct_lift": 0.526188042922841,
+      "top_10pct_capture": 0.05263157894736842,
+      "top_10pct_records": 412
+    }
+  },
+  "test_uncalibrated": {
+    "average_precision": 0.44904661517689015,
+    "roc_auc": 0.6475786157872772,
+    "brier": 0.26288147901955955,
+    "log_loss": 0.9270156271861227,
+    "prevalence": 0.3083272638990046,
+    "top_10pct_precision": 0.5182038834951457,
+    "top_10pct_lift": 1.6806943276507913,
+    "top_10pct_capture": 0.16811023622047244,
+    "top_10pct_records": 824
+  },
+  "test_calibrated": {
+    "average_precision": 0.44904680702399513,
+    "roc_auc": 0.6475785121454413,
+    "brier": 0.24008871020174147,
+    "log_loss": 0.7592062237501923,
+    "prevalence": 0.3083272638990046,
+    "top_10pct_precision": 0.5182038834951457,
+    "top_10pct_lift": 1.6806943276507913,
+    "top_10pct_capture": 0.16811023622047244,
+    "top_10pct_records": 824
+  },
+  "test_training_prevalence_baseline": {
+    "average_precision": 0.3083272638990046,
+    "roc_auc": 0.5,
+    "brier": 0.28099342234858143,
+    "log_loss": 0.9698558935329471,
+    "prevalence": 0.3083272638990046,
+    "top_10pct_precision": 0.07160194174757281,
+    "top_10pct_lift": 0.23222708508523812,
+    "top_10pct_capture": 0.023228346456692913,
+    "top_10pct_records": 824
+  },
+  "calibration_bins": [
+    {
+      "bin": 0,
+      "records": 4284,
+      "mean_probability": 0.06537414902235522,
+      "observed_rate": 0.1977124183006536
+    },
+    {
+      "bin": 1,
+      "records": 2362,
+      "mean_probability": 0.12943731585911356,
+      "observed_rate": 0.3611346316680779
+    },
+    {
+      "bin": 2,
+      "records": 751,
+      "mean_probability": 0.23424779434938384,
+      "observed_rate": 0.5406125166444741
+    },
+    {
+      "bin": 3,
+      "records": 216,
+      "mean_probability": 0.3572743319161226,
+      "observed_rate": 0.6898148148148148
+    },
+    {
+      "bin": 4,
+      "records": 50,
+      "mean_probability": 0.4262217098108099,
+      "observed_rate": 0.8
+    },
+    {
+      "bin": 5,
+      "records": 23,
+      "mean_probability": 0.5842201424396356,
+      "observed_rate": 0.30434782608695654
+    },
+    {
+      "bin": 6,
+      "records": 114,
+      "mean_probability": 0.6442500383258325,
+      "observed_rate": 0.49122807017543857
+    },
+    {
+      "bin": 7,
+      "records": 273,
+      "mean_probability": 0.7667595354669272,
+      "observed_rate": 0.34065934065934067
+    },
+    {
+      "bin": 8,
+      "records": 129,
+      "mean_probability": 0.8376065094975005,
+      "observed_rate": 0.4883720930232558
+    },
+    {
+      "bin": 9,
+      "records": 36,
+      "mean_probability": 0.9042749583445912,
+      "observed_rate": 0.7222222222222222
+    }
+  ],
+  "test_probability_mean": 0.1574421325886279,
+  "protocol": "Input row order is chronological per UCI; no exact dates or client IDs supplied. 60/10/10/20 ordered blocks. Model chosen by selection AP. Sigmoid fitted only on calibration block. Test untouched until reporting."
+}

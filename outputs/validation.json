@@ -1,0 +1,10 @@
+{
+  "source_row_count": true,
+  "disjoint_ordered_blocks": true,
+  "duration_and_outcome_excluded": true,
+  "personal_financial_and_demographic_features_excluded": true,
+  "finite_probabilities_in_unit_interval": true,
+  "test_has_both_classes": true,
+  "model_selection_matches_selection_ap": true,
+  "calibration_count_reconciles": true
+}
