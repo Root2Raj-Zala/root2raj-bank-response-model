@@ -1,5 +1,7 @@
 # Bank response: when the future distribution changes
 
+By **[Ruturajsinh Zala (Root2Raj)](https://root2raj.ruturaj1zala123.chatgpt.site/about/)**. Root2Raj is my personal coding username. [Read the portfolio case study](https://root2raj.ruturaj1zala123.chatgpt.site/projects/bank-response-model/).
+
 **Root2Raj · Data Science · AI-assisted historical model-risk case study**
 
 Can campaign context rank subscription outcomes without using the duration of the call being predicted? This benchmark uses **41,188 real Portuguese bank campaign records**, ordered chronologically as documented by UCI. It deliberately examines a difficult later cohort rather than mixing earlier and later observations.
